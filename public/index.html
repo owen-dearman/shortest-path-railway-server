@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shortest-Rail-Route-Server API</title>
+</head>
+
+<body>
+    <header>
+        <h1>Shortest-Rail-Route-Server API</h1>
+        <h2>RESTful JSON API</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>Index</h3>
+            <p><code>GET /</code></p>
+        </section>
+        <section>
+            <h3>Get list of tiplocs in map</h3>
+            <p><code>GET /tiplocs/list</code></p>
+        </section>
+        <section>
+            <h3>Get number of tiplocs in map</h3>
+            <p><code>GET /tiplocs/num</code></p>
+        </section>
+        <section>
+            <h3>Get number of routes in map</h3>
+            <p><code>GET /routes/num</code></p>
+        </section>
+        <section>
+            <h3>Get shortest route between two tiplocs</h3>
+            <p><code>GET /path/:from/:to</code></p>
+        </section>
+        <section>
+            <h3>Reload the railway data</h3>
+            <p><code>GET /refreshData</code></p>
+        </section>
+        <section>
+            <h3>Test the data load</h3>
+            <p><code>GET /test</code></p>
+        </section>
+        <section>
+            <h3>Download Data File</h3>
+            <p><code>GET /data</code></p>
+        </section>
+    </main>
+</body>
+
+</html>
