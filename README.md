@@ -1,8 +1,11 @@
-# mark-fullstack-proj--starter-1
+# Shortest-Path-Railway-Server
+## Owen Dearman
+
+A node server that uses a bespoke dijkstra algorithm to calculate the shortest path between two TIPLOCs on a locally stored railway geography
 
 ## Usage:
 
-
+Access the server at https://shortest-rail-route-server.herokuapp.com/
 
 
 ## Install

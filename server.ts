@@ -51,7 +51,7 @@ app.get("/reloadData", async (req, res) => {
 
 app.get("/test", async (req, res) => {
   if (Object.keys(railwayMap).length > 0) {
-    res.status(200).send(`Data present with ${Object.keys(railwayMap).length} Functions. Data Present With ${railwayMap.getNumRoutes()} rows.`)
+    res.status(200).send(`Data present with ${Object.keys(railwayMap).length} Functions Compiled. Railway Data Present With ${railwayMap.getNumRoutes()} rows.`)
   }
 })
 

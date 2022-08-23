@@ -1,7 +1,7 @@
 import filePath from "../filePath";
 import { convertCSVtoJS } from "./2.convertCSVtoJS";
 import { createListOfTiplocs } from "./3.createListOfTiplocs";
-import { getShortestRoute } from "./4.getShortestRoute";
+import { CalculateShortestPathBetweeNodes } from "./4.CalculateShortestPathBetweeNodes";
 import { Railway, Route, ShortestRoute, TiplocError } from "./typing";
 
 /**
@@ -39,7 +39,7 @@ export function createRailwayMap(): Railway {
     const originTiplocExist = tiplocArr.includes(origin)
     const destinationTiplocExist = tiplocArr.includes(destination)
     if (originTiplocExist && destinationTiplocExist) {
-      return getShortestRoute(
+      return CalculateShortestPathBetweeNodes(
         origin.toUpperCase(),
         destination.toUpperCase(),
         railwayData,
